@@ -1,0 +1,119 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Aug, 2017, 9:49:14 PM
+    Author     : Fascel
+*/
+
+body
+{
+    margin:0;
+    padding:0;
+    background: url("images/steak.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+h1
+{
+    text-align:center;
+    padding: 50px 0 20px;
+    color:#ffcc33;
+    
+}
+
+.container
+{
+    width:60%;
+    height:400px;
+    top:50%;
+   
+    border:10px  #cccccc;
+    background-color: rgba(0,0,0,.5);
+    margin: 0 auto;
+    box-shadow: 10px 15px 40px #666666;
+}
+
+.container .left
+{
+    float:left;
+    width:50%;
+    height:400px;
+
+ overflow:hidden;
+}
+
+.container .right
+{
+     float:right;
+     width:50%;
+    height:400px;
+    margin:0;
+  
+      
+}
+ .container .right p
+ {
+     margin:0;
+     padding-bottom:10px;
+     padding-top:10px;
+     padding-left:30px;
+     font-weight:bold;
+ }
+ 
+ .container .right input
+            {
+                
+                 width: 50%;
+                 background-color:rgba(0,0,0,.5);
+                 color: white;
+                 padding: 14px 50px;
+                margin: 8px 10px;
+                 border: none;
+                border-radius: 4px;
+            } 
+            
+  .container .right input[type="text"] ,     
+  .container .right input[type="password"] 
+  {
+      border:none;
+      border-bottom: 2px solid #ffcc00;
+      outline:none;
+     
+  }
+
+  .container .right button[type="submit"]
+  {
+      margin:0;
+      font-weight:bold;
+      font-family:cursive;
+      font-size:80%;
+      width:50%;
+      height:40px;
+     
+    border-radius: 4px;
+    cursor:pointer;
+    background-color: #ffcc00;
+    
+  }
+   .container .right button[type="button"]
+   {
+       margin:0;
+      font-weight:bold;
+      font-family:cursive;
+      border-radius: 4px;
+    cursor:pointer;
+    background-color:red;
+    padding-right:40px;
+   }
+
+   .container .right button[type="submit"]:hover
+   {
+       background:#ffffff;
+   }
+   
+  

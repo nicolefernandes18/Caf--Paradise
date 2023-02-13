@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Café Paradise</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script>
+       jQuery(function() {
+  jQuery('#datepicker').datepicker(
+    {
+      minDate: -1,
+      prevText: '',
+      nextText: '',
+      maxDate: '+3M',
+      firstDay: 1,
+      dateFormat: 'mm/dd/yy',
+      onSelect: function(dateText, inst) {
+      jQuery('#calendar_date').val(dateText);
+    }
+  });
+});
+        </script>
+        <link href='http://fonts.googleapis.com/css?family=Marck Script' rel='stylesheet' type='text/css'> 
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Linden Hill' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style-portfolio.css">
+        <link rel="stylesheet" href="css/picto-foundry-food.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="icon" href="images/cafe2.jpg" type="image/x-icon">   
+        <link rel="stylesheet" type="text/css" href="WTprojectcss.css">
+        <style>
+        .button
+        {
+        	margin-left:565px;
+            background-color:peru;
+            border-radius:5px;
+            border:2px solid black;
+            font-family:"Playball"; word-spacing: 5px;width:200px;font-size:20px;margin-top:75px; 
+        }
+        </style>
+        
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="home.html">Café Paradise</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav main-nav  clear navbar-right ">
+                            <li><a class="color_animation" href="home.html">Home</a></li>
+                            <li><a class="color_animation" href="Login.jsp">Register/Login</a></li>
+                            <li><a class="color_animation" href="About-Us.html">About Us</a></li>
+                            <li><a class="color_animation" href="addingitems.html">Menu</a></li>
+                            <li><a class="navactive color_animation" href="reservation.html">Reserve A Table</a></li>
+                            <li><a class="color_animation" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <hr>
+        <hr>
+        <hr>
+        <p style="text-align:center;font-family:Akronim;font-size:55px;word-spacing:10px"><u style="color:white">RESERVE A TABLE</u></p>
+        <hr>
+        <form>
+    <p style="text-align:center;font-family:Linden Hill;font-size:20px;word-spacing:10px;color:white">NUMBER OF PEOPLE:</p>   
+    <select name="nop" style="width:120px;height:25px;margin-left:600px;font-family:Lobster">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+     <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <hr>
+ 
+        
+    <p style="margin-left:630px;font-family:Linden Hill;font-size:20px;word-spacing:10px;color:white">DATE:</p>          
+    <input type="date" style="margin-left:580px;width:160px;height:25px;font-family:Lobster">
+    <hr>
+
+    <p style="margin-left:630px;font-family:Linden Hill;font-size:20px;word-spacing:10px;color:white">TIME:</p>              
+    <select name="tm" style="width:120px;height:25px;margin-left:600px;font-family:'Lobster'">
+    <option value="BREAKFAST">BREAKFAST</option>
+    <option value="LUNCH">LUNCH</option>
+    <option value="DINNER">DINNER</option>
+    </select>
+    <hr>
+
+  <a class="button" href="tablebooked.html" style="text-decoration:none">CONFIRM TABLE</a>
+            
+            </form>
+    </body>
+</html>
+
